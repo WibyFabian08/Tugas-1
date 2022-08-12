@@ -3,40 +3,36 @@ const generateStart = (type, size) => {
     size = 3;
   }
 
-  if (type == 1) {
-    star1(size);
-  }
-
-  if (type == 2) {
-    star2(size);
-  }
-
-  if (type == 3) {
-    star3(size);
-  }
-
-  if (type == 4) {
-    star4(size);
-  }
-
-  if (type == 5) {
-    star5(size);
-  }
-
-  if (type == 6) {
-    star6(size);
-  }
-
-  if (type == 7) {
-    star7(size);
-  }
-
-  if (type == 8) {
-    star8(size);
-  }
-
-  if (type == 9) {
-    star9(size);
+  switch (type) {
+    case 1:
+      star1(size);
+      break;
+    case 2:
+      star2(size);
+      break;
+    case 3:
+      star3(size);
+      break;
+    case 4:
+      star4(size);
+      break;
+    case 5:
+      star5(size);
+      break;
+    case 6:
+      star6(size);
+      break;
+    case 7:
+      star7(size);
+      break;
+    case 8:
+      star8(size);
+      break;
+    case 9:
+      star9(size);
+      break;
+    default:
+      break;
   }
 };
 
